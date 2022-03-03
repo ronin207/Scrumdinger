@@ -49,7 +49,6 @@
 		423FD0AE27D09D3700C4C047 = {
 			isa = PBXGroup;
 			children = (
-				42E19E7427D0E80E005F7740 /* DetailEditView.swift */,
 				423FD0B927D09D3700C4C047 /* Scrumdinger */,
 				423FD0B827D09D3700C4C047 /* Products */,
 			);
@@ -70,6 +69,7 @@
 				423FD0BC27D09D3700C4C047 /* MeetingView.swift */,
 				423FD0D127D0BDB800C4C047 /* ScrumsView.swift */,
 				423FD0D527D0C94700C4C047 /* DetailView.swift */,
+				42E19E7427D0E80E005F7740 /* DetailEditView.swift */,
 				423FD0CD27D0A8D400C4C047 /* CardView.swift */,
 				423FD0CF27D0B51200C4C047 /* TrailingIconLabelStyle.swift */,
 				423FD0C827D0A4DE00C4C047 /* Models */,
