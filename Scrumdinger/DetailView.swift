@@ -31,7 +31,15 @@ struct DetailView: View {
             
             HStack {
                 Label("Theme", systemImage: "paintpalette")
+                
+                Spacer()
+                
+                Text(scrum.theme.name)
+                    .foregroundColor(scrum.theme.accentColor)
+                    .background(scrum.theme.mainColor)
+                    .cornerRadius(4)
             }
+            .accessibilityElement(children: .combine)
         }
     }
 }
