@@ -20,10 +20,12 @@ struct DetailEditView: View {
                     Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
                         Text("Length")
                     }
+                    .accessibilityValue("\(Int(data.lengthInMinutes)) minute(s)")
                     
                     Spacer()
                     
                     Text("\(Int(data.lengthInMinutes)) minute(s)")
+                        .accessibilityHidden(true)
                 }
             } header: {
                 Text("Meeting Info")
@@ -47,6 +49,7 @@ struct DetailEditView: View {
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel("Add Attendee")
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
