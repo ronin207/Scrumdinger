@@ -53,6 +53,7 @@
 			children = (
 				423FD0BA27D09D3700C4C047 /* ScrumdingerApp.swift */,
 				423FD0BC27D09D3700C4C047 /* MeetingView.swift */,
+				423FD0C827D0A4DE00C4C047 /* Models */,
 				423FD0BE27D09D3800C4C047 /* Assets.xcassets */,
 				423FD0C027D09D3800C4C047 /* Preview Content */,
 			);
@@ -65,6 +66,13 @@
 				423FD0C127D09D3800C4C047 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		423FD0C827D0A4DE00C4C047 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
