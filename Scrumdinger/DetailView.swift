@@ -16,30 +16,38 @@ struct DetailView: View {
                 Label("Start Meeting", systemImage: "timer")
                     .font(.headline)
                     .foregroundColor(.accentColor)
+                
+                HStack {
+                    Label("Length", systemImage: "clock")
+                    
+                    Spacer()
+                    
+                    Text("\(scrum.lengthInMinutes) minute(s)")
+                }
+                .accessibilityElement(children: .combine)
+                
+                HStack {
+                    Label("Theme", systemImage: "paintpalette")
+                    
+                    Spacer()
+                    
+                    Text(scrum.theme.name)
+                        .foregroundColor(scrum.theme.accentColor)
+                        .background(scrum.theme.mainColor)
+                        .cornerRadius(4)
+                }
+                .accessibilityElement(children: .combine)
             } header: {
                 Text("Meeting Info")
             }
             
-            HStack {
-                Label("Length", systemImage: "clock")
-                
-                Spacer()
-                
-                Text("\(scrum.lengthInMinutes) minute(s)")
+            Section {
+                ForEach(scrum.attendees) { attendee in
+                    Label(attendee.name, systemImage: "person")
+                }
+            } header: {
+                Text("Attendees")
             }
-            .accessibilityElement(children: .combine)
-            
-            HStack {
-                Label("Theme", systemImage: "paintpalette")
-                
-                Spacer()
-                
-                Text(scrum.theme.name)
-                    .foregroundColor(scrum.theme.accentColor)
-                    .background(scrum.theme.mainColor)
-                    .cornerRadius(4)
-            }
-            .accessibilityElement(children: .combine)
         }
     }
 }
