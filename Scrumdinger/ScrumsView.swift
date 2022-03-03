@@ -22,6 +22,8 @@ struct ScrumsView: View {
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrumsView(scrums: DailyScrum.sampleData)
+        NavigationView {
+            ScrumsView(scrums: DailyScrum.sampleData)
+        }
     }
 }
