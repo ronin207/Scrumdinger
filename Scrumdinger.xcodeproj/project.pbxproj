@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422C3A3627D1D3B100216CD4 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 422C3A3527D1D3B000216CD4 /* ding.wav */; };
 		423FD0BB27D09D3700C4C047 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423FD0BA27D09D3700C4C047 /* ScrumdingerApp.swift */; };
 		423FD0BD27D09D3700C4C047 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423FD0BC27D09D3700C4C047 /* MeetingView.swift */; };
 		423FD0BF27D09D3800C4C047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423FD0BE27D09D3800C4C047 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422C3A3527D1D3B000216CD4 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		423FD0B727D09D3700C4C047 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423FD0BA27D09D3700C4C047 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		423FD0BC27D09D3700C4C047 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		422C3A3427D1D37000216CD4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				422C3A3527D1D3B000216CD4 /* ding.wav */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422C3A3627D1D3B100216CD4 /* ding.wav in Resources */,
 				423FD0C227D09D3800C4C047 /* Preview Assets.xcassets in Resources */,
 				423FD0BF27D09D3800C4C047 /* Assets.xcassets in Resources */,
 			);
