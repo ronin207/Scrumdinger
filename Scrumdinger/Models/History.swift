@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct History: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct History_Previews: PreviewProvider {
-    static var previews: some View {
-        History()
+struct History: Identifiable {
+    let id: UUID
+    let date: Date
+    var attendees: [DailyScrum.Attendee]
+    var lengthInMinutes: Int
+    
+    init(id: UUID = UUID(), date: Date = Date(), attendees: [DailyScrum.Attendee], lengthInMinutes: Int = 5) {
+        self.id = id
+        self.date = date
+        self.attendees = attendees
+        self.lengthInMinutes = lengthInMinutes
     }
 }
