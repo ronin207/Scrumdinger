@@ -58,6 +58,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		422C3A3427D1D37000216CD4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		423FD0AE27D09D3700C4C047 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +97,7 @@
 				42E19E7627D100E7005F7740 /* ThemeView.swift */,
 				42E19E7827D108C8005F7740 /* ThemePicker.swift */,
 				423FD0C827D0A4DE00C4C047 /* Models */,
+				422C3A3427D1D37000216CD4 /* Resources */,
 				423FD0BE27D09D3800C4C047 /* Assets.xcassets */,
 				423FD0C027D09D3800C4C047 /* Preview Content */,
 			);
