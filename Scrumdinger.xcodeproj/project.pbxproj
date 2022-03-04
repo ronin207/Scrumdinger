@@ -11,6 +11,8 @@
 		422C3A3827D1D3DA00216CD4 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3A3727D1D3DA00216CD4 /* AVPlayer+Ding.swift */; };
 		422C3A3A27D1EC2600216CD4 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3A3927D1EC2600216CD4 /* History.swift */; };
 		422C3A3C27D1F08E00216CD4 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3A3B27D1F08E00216CD4 /* ScrumStore.swift */; };
+		422C3A3E27D1F9E100216CD4 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3A3D27D1F9E100216CD4 /* ErrorWrapper.swift */; };
+		422C3A4027D1F9EB00216CD4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C3A3F27D1F9EB00216CD4 /* ErrorView.swift */; };
 		423FD0BB27D09D3700C4C047 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423FD0BA27D09D3700C4C047 /* ScrumdingerApp.swift */; };
 		423FD0BD27D09D3700C4C047 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423FD0BC27D09D3700C4C047 /* MeetingView.swift */; };
 		423FD0BF27D09D3800C4C047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423FD0BE27D09D3800C4C047 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		422C3A3727D1D3DA00216CD4 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		422C3A3927D1EC2600216CD4 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		422C3A3B27D1F08E00216CD4 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
+		422C3A3D27D1F9E100216CD4 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		422C3A3F27D1F9EB00216CD4 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		423FD0B727D09D3700C4C047 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423FD0BA27D09D3700C4C047 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		423FD0BC27D09D3700C4C047 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				423FD0BC27D09D3700C4C047 /* MeetingView.swift */,
 				427DF42327D140FC0030AE4B /* MeetingHeaderView.swift */,
 				427DF42927D1D0540030AE4B /* MeetingFooterView.swift */,
+				422C3A3F27D1F9EB00216CD4 /* ErrorView.swift */,
 				427DF42527D1C4990030AE4B /* ScrumProgressViewStyle.swift */,
 				423FD0D127D0BDB800C4C047 /* ScrumsView.swift */,
 				423FD0D527D0C94700C4C047 /* DetailView.swift */,
@@ -130,6 +135,7 @@
 				422C3A3727D1D3DA00216CD4 /* AVPlayer+Ding.swift */,
 				422C3A3927D1EC2600216CD4 /* History.swift */,
 				422C3A3B27D1F08E00216CD4 /* ScrumStore.swift */,
+				422C3A3D27D1F9E100216CD4 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,10 +221,12 @@
 				423FD0D627D0C94700C4C047 /* DetailView.swift in Sources */,
 				427DF42427D140FC0030AE4B /* MeetingHeaderView.swift in Sources */,
 				42E19E7527D0E80E005F7740 /* DetailEditView.swift in Sources */,
+				422C3A3E27D1F9E100216CD4 /* ErrorWrapper.swift in Sources */,
 				423FD0D027D0B51200C4C047 /* TrailingIconLabelStyle.swift in Sources */,
 				423FD0CA27D0A4FE00C4C047 /* Theme.swift in Sources */,
 				423FD0D227D0BDB800C4C047 /* ScrumsView.swift in Sources */,
 				423FD0BD27D09D3700C4C047 /* MeetingView.swift in Sources */,
+				422C3A4027D1F9EB00216CD4 /* ErrorView.swift in Sources */,
 				423FD0BB27D09D3700C4C047 /* ScrumdingerApp.swift in Sources */,
 				42E19E7727D100E7005F7740 /* ThemeView.swift in Sources */,
 				423FD0CE27D0A8D400C4C047 /* CardView.swift in Sources */,
