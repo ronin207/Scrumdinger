@@ -28,7 +28,6 @@ struct DetailEditView: View {
                         .accessibilityHidden(true)
                 }
                 
-                
                 ThemePicker(selection: $data.theme)
             } header: {
                 Text("Meeting Info")
