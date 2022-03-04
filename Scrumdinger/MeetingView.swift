@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MeetingView: View {
+    @StateObject var scrumTimer = ScrumTimer()
     @Binding var scrum: DailyScrum
     
     var body: some View {
@@ -16,26 +17,7 @@ struct MeetingView: View {
                 .fill(scrum.theme.mainColor)
             
             VStack {
-                ProgressView(value: 5, total: 15)
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Seconds Elapsed")
-                            .font(.caption)
-                        Label("300", systemImage: "hourglass.bottomhalf.fill")
-                    }
-                    
-                    Spacer()
-                    
-                    VStack(alignment: .trailing) {
-                        Text("Seconds Remaining")
-                            .font(.caption)
-                        Label("600", systemImage: "hourglass.tophalf.fill")
-                    }
-                }
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel("Time Remaining")
-                .accessibilityValue("10 minutes")
+                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
                 
                 Circle()
                     .strokeBorder(lineWidth: 24)
