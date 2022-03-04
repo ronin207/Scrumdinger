@@ -26,9 +26,10 @@ struct DetailEditView: View {
                     
                     Text("\(Int(data.lengthInMinutes)) minute(s)")
                         .accessibilityHidden(true)
-                    
-                    ThemePicker(selection: $data.theme)
                 }
+                
+                
+                ThemePicker(selection: $data.theme)
             } header: {
                 Text("Meeting Info")
             }
