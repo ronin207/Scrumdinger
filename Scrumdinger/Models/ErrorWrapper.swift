@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ErrorWrapper: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ErrorWrapper_Previews: PreviewProvider {
-    static var previews: some View {
-        ErrorWrapper()
+struct ErrorWrapper: Identifiable {
+    let id: UUID
+    let error: Error
+    let guidance: String
+    
+    init(id: UUID = UUID(), error: Error, guidance: String) {
+        self.id = id
+        self.error = error
+        self.guidance = guidance
     }
 }
